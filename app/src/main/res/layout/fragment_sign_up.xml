@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/auth_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Регистрация"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Имя пользователя"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/form_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Электронная почта"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/form_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Пароль"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/form_bg" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/button_bg"
+            android:text="Продолжить"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="10dp"
+                android:gravity="center"
+                android:text="ИЛИ"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="140dp"
+                android:layout_height="1dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:background="@color/black"
+                tools:ignore="RtlCompat" />
+
+            <View
+                android:layout_width="140dp"
+                android:layout_height="1dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:background="@color/black"
+                tools:ignore="RtlCompat" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/apple_btn"
+            android:text="Войти через Apple"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/social_bg"
+            android:drawableStart="@drawable/ic_facebook_f_brands"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:text="Войти через Facebook"
+            android:textColor="@color/black"
+            tools:ignore="RtlCompat" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/social_bg"
+            android:drawableStart="@drawable/ic_google_brands"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:text="Войти через Google"
+            android:textColor="@color/black"
+            tools:ignore="RtlCompat" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="8dp"
+            android:text="@string/checkBox"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/HaveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="95dp"
+            android:backgroundTint="@color/white"
+            android:text="Уже есть аккаунт?"
+            android:textColor="#FFBB5B"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
